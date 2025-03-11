@@ -1,0 +1,107 @@
+[general]
+live_config_reload = true
+
+[colors.bright]
+black = "#202020"
+blue = "#a5d6ff"
+cyan = "#88afa2"
+green = "#90a959"
+magenta = "#aa759f"
+red = "#cc6666"
+white = "#e1e1e1"
+yellow = "#f4bf75"
+
+[colors.cursor]
+cursor = "#d0d0d0"
+text = "#151515"
+
+[colors.dim]
+black = "#373737"
+blue = "#7e97ab"
+cyan = "#88afa2"
+green = "#90a959"
+magenta = "#aa759f"
+red = "#cc6666"
+white = "#e1e1e1"
+yellow = "#f4bf75"
+
+[colors.normal]
+black = "#171717"
+blue = "#a5d6ff"
+cyan = "#88afa2"
+green = "#90a959"
+magenta = "#aa759f"
+red = "#cc6666"
+white = "#e1e1e1"
+yellow = "#f4bf75"
+
+[colors.primary]
+background = "#151515"
+bright_foreground = "#e1e1e1"
+dim_foreground = "#e1e1e1"
+foreground = "#e1e1e1"
+
+[env]
+TERM = "xterm-256color"
+
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 2
+
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "None"
+key = "Q"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "None"
+key = "W"
+mods = "Command"
+
+[terminal.shell]
+program = "/bin/zsh"
+
+[window]
+# blur = true
+# decorations = "buttonless"
+opacity = 1
+# opacity = 0.9
+startup_mode = "Maximized"
+
+
+[font]
+size = 15
+
+[window.padding]
+x = 10
+y = 10
+
+# x = 50
+# y = 10
