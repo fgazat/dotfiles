@@ -17,6 +17,22 @@
             ]
           },
           {
+            "description": "Open Postman by left_option + p",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "mandatory": ["left_option"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [{ "software_function": { "open_application": { "file_path": "/Applications/Postman.app" } } }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Open Bear by right command + 4",
             "manipulators": [
               {
