@@ -97,6 +97,37 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": ["left_option"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+
+                "to": [{ "shell_command": "open -a 'Calendar.app'" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "m",
+                  "modifiers": {
+                    "mandatory": ["left_option"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Mail.app'" }],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },
@@ -114,7 +145,7 @@
       ],
       "devices": [
         {
-          "disable_built_in_keyboard_if_exists": true,
+          "disable_built_in_keyboard_if_exists": false,
           "identifiers": {
             "is_keyboard": true,
             "product_id": 591,
