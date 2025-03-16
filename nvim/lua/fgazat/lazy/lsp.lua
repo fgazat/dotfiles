@@ -112,12 +112,14 @@ return {
                         "+noc/go",
                         -- "+browser/backend/pkg/startrek"
                     }
+                    local cmd = "~/.ya/tools/v4/gopls-darwin-arm64/gopls"
                     if string.find(vim.api.nvim_buf_get_name(0), "/goarc") == nil then
+                        cmd = "/users/fgazat/.local/share/nvim/mason/bin/gopls"
                         filter = {}
                     end
 
                     lspconfig.gopls.setup {
-                        cmd = { "/Users/azat-fg/.ya/tools/v4/gopls-darwin-arm64/gopls" },
+                        cmd = { cmd },
                         capabilities = capabilities,
                         settings = {
                             gopls = {
