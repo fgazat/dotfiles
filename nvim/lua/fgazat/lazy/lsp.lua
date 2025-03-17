@@ -112,9 +112,14 @@ return {
                         "+noc/go",
                         -- "+browser/backend/pkg/startrek"
                     }
-                    local cmd = "~/.ya/tools/v4/gopls-darwin-arm64/gopls"
-                    if string.find(vim.api.nvim_buf_get_name(0), "/goarc") == nil then
-                        cmd = "/users/fgazat/.local/share/nvim/mason/bin/gopls"
+
+                    local home_dir = vim.env.HOME
+                    local cmd = home_dir .. "/.ya/tools/v4/gopls-darwin-arm64/gopls"
+                    -- local p = vim.fn.getcwd()
+                    --
+                    -- vim.notify(p .. "path", "error", {})
+                    if string.find(vim.fn.getcwd(), "/goarc") == nil then
+                        cmd = home_dir .. "/.local/share/nvim/mason/bin/gopls"
                         filter = {}
                     end
 
