@@ -10,6 +10,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("", "<space>", "<nop>")
 
+vim.keymap.set('n', '<c-j>', "<cmd>cnext<cr>")
+vim.keymap.set('n', '<c-k>', "<cmd>cprev<cr>")
+
 
 -- vim.keymap.set('i', '<c-h>', "<nop>")
 vim.keymap.set('i', '<c-h>', '<BS>', { noremap = true, silent = true })
