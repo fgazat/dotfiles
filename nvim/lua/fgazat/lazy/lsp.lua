@@ -36,7 +36,7 @@ return {
                 "html",
                 "lua_ls",
                 -- "pylsp",
-                "pyright",
+                -- "pyright",
                 "bashls",
                 "gopls",
                 "marksman",
