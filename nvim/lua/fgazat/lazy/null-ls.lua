@@ -15,7 +15,7 @@ return {
                     extra_args = { "--single-quote", "--jsx-single-quote", "--print-width=120", "--prose-wrap=always" },
                 },
                 formatting.black.with { extra_args = { "--line-length=120" } },
-                -- formatting.isort,
+                formatting.isort.with { extra_args = { "-l=120", "-m=3"}},
 
                 formatting.gofmt,
                 formatting.gofumpt,
