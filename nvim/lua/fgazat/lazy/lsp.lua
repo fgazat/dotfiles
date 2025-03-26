@@ -110,6 +110,7 @@ return {
                         "+sandbox/tasklet",
                         "+yt/go",
                         "+noc/go",
+                        "+security/markdown_check/mdcheck",
                         -- "+browser/backend/pkg/startrek"
                     }
 
