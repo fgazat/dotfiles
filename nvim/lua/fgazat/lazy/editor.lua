@@ -38,6 +38,12 @@ return {
             scope = { enabled = false },
         },
     },
+    {
+        'numToStr/Comment.nvim',
+        event = "VeryLazy",
+        opts = {},
+    },
+
     { "mbbill/undotree",              event = "VeryLazy", keys = { { "<leader>u", vim.cmd.UndotreeToggle, desc = "diagnostics" } } },
     { "tpope/vim-surround",           event = "VeryLazy" },
     { "tpope/vim-dadbod",             event = "VeryLazy" },
