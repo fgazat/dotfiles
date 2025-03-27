@@ -160,6 +160,7 @@
                 ]
             },
             "name": "all_apps",
+            "selected": true,
             "simple_modifications": [
                 {
                     "from": { "key_code": "caps_lock" },
@@ -254,7 +255,6 @@
                 ]
             },
             "name": "terminal",
-            "selected": true,
             "simple_modifications": [
                 {
                     "from": { "key_code": "caps_lock" },
