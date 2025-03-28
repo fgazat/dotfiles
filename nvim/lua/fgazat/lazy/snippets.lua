@@ -32,6 +32,7 @@ return {
             s("json", fmt("```json\n{}\n```\n", { i(0) })),
             s("pl", fmt("```plain\n{}\n```\n", { i(0) })),
             s("go", fmt("```go\n{}\n```\n", { i(0) })),
+            s("lua", fmt("```lua\n{}\n```\n", { i(0) })),
         })
     end,
 }

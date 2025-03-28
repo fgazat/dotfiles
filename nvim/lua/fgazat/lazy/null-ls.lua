@@ -10,12 +10,12 @@ return {
             debug = false,
             sources = {
                 formatting.prettier.with {
-                    disabled_filetypes = { "markdown", "svelte" },
+                    disabled_filetypes = { "svelte" },
                     extra_filetypes = { "toml", "solidity", "yaml", "json", "xml" },
                     extra_args = { "--single-quote", "--jsx-single-quote", "--print-width=120", "--prose-wrap=always" },
                 },
                 formatting.black.with { extra_args = { "--line-length=120" } },
-                formatting.isort.with { extra_args = { "-l=120", "-m=3"}},
+                formatting.isort.with { extra_args = { "-l=120", "-m=3" } },
 
                 formatting.gofmt,
                 formatting.gofumpt,
